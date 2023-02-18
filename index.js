@@ -115,4 +115,6 @@ delete newArrey[2];
 const result = newArrey.toString(" ");
 console.log(result);
 
-
+// 1stringanswer
+// const arr = ['BEST', 'the', 'foo', 'is', 'JS'];
+// console.log(arr.slice(0,2).concat(arr.slice(-2)).reverse().join(' '));
