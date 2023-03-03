@@ -110,6 +110,7 @@
  *? перевести его в строку разделенную пробелами не меняя массив
  */
 
+
 /**
  *? Напиши скрипт для об'єкта user,
  *? послідовно:
@@ -139,3 +140,11 @@
 //     }
 
    
+
+const arr = ['BEST', 'the', 'foo', 'is', 'JS'];
+const newArrey = arr.reverse();
+delete newArrey[2];
+const result = newArrey.toString(" ");
+console.log(result);
+
+
