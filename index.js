@@ -245,24 +245,48 @@
 }
 
  */
-const tweets = [
-  { id: "000", likes: 5, tags: ["js", "nodejs"] },
-  { id: "001", likes: 2, tags: ["html", "css"] },
-  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
-  { id: "003", likes: 8, tags: ["css", "react"] },
-  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
-];
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
 
-const totalTags = (array) => {
-  const arrayNew = array.flatMap((tweet) => tweet.tags);
-  console.log(arrayNew);
-  const newObj = arrayNew.reduce((acc, el) => {
-    return {
-      ...acc,
-      [el]: acc[el] ? acc[el] + 1 : 1,
-    };
-  }, {});
-  console.log(newObj);
-};
+// const totalTags = (array) => {
+//   const arrayNew = array.flatMap((tweet) => tweet.tags);
+//   console.log(arrayNew);
+//   const newObj = arrayNew.reduce((acc, el) => {
+//     return {
+//       ...acc,
+//       [el]: acc[el] ? acc[el] + 1 : 1,
+//     };
+//   }, {});
+//   console.log(newObj);
+// };
 
-totalTags(tweets);
+// totalTags(tweets);
+
+///**
+// *? Зробіть знижку 20% на всі фрукти у масиві
+// *? Надайте ід для кожного продукту
+// */
+
+// const fruits = [
+//       { name: "apple", price: 200 },
+//       { name: "orange", price: 300 },
+//       { name: "grapes", price: 750 },
+//     ];
+// Вариант через map()
+//     const newArr = fruits.map(fruit => {
+      
+//      return  {...fruit, id: Date.now(), price: fruit.price * 0.8}
+//     });
+
+// Вариант через for of
+//       let newArr = [];
+//       for(const item of fruits){
+//             newArr.push({...item, id: Date.now(), price: item.price * 0.8})
+//     }
+
+//     console.log(newArr);
