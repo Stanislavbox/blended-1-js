@@ -110,6 +110,9 @@
  *? перевести его в строку разделенную пробелами не меняя массив
  */
 
+// 1stringanswer
+// const arr = ['BEST', 'the', 'foo', 'is', 'JS'];
+// console.log(arr.slice(0,2).concat(arr.slice(-2)).reverse().join(' '));
 
 /**
  *? Напиши скрипт для об'єкта user,
