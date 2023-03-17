@@ -320,3 +320,32 @@ const arr = [
       // - Найти ученого, который прожил больше всех и ученого, который меньше.
       // - Найти ученых, у которых совпадают первые буквы имени и фамилии.
       // - Узнать, все ли ученые работали в 19 веке.
+
+
+
+
+      //Task 1
+      //TODO:=============================================
+//Напиши функцію конструктор User для створення користувача з такими властивостями
+//a. userName - ім'я, рядок
+//b. age - вік, число
+//c. numbersOfPost - кількість постів, число
+//d. клас очікує 1 параметр - об'єкт налаштувань з однойменними властивостями
+
+//Додай метод getInfo(), який повертає рядок:
+//`Користувачеві ім'я кількість років і в нього кількість публікацій.`
+
+const User = function ({ userName, age, numbersOfPost }) {
+    this.userName = userName;
+    this.age = age;
+    this.numbersOfPost = numbersOfPost;
+    this.getInfo = function (){
+ return (`Користувачеві ${userName} ${age} років і в нього ${numbersOfPost} публікацій.`);
+    } 
+       
+}
+
+const newUser = new User({ userName: "Anna", age: 22, numbersOfPost: 5 });
+console.log(newUser);
+console.log(newUser.getInfo());
+console.log(newUser.userName);
