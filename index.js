@@ -341,7 +341,7 @@
 //     this.numbersOfPost = numbersOfPost;
 //     this.getInfo = function (){
 //  return (`Користувачеві ${userName} ${age} років і в нього ${numbersOfPost} публікацій.`);
-//     } 
+//     }
        
 // }
 
@@ -374,10 +374,42 @@
 // Storage.prototype.removeItem = function(item){
 //    if(this.items.includes(item)){
 //     this.items.splice(this.items.indexOf(item), 1);
-//    } 
+//    }
 // }
 // const newStorage = new Storage(['one', 'two', 'three']);
 // console.log(newStorage.getItems());
 // console.log(newStorage.addItems('qwe'));
 // console.log(newStorage.removeItem('two'));
 // console.log(newStorage.getItems());
+
+//TODO:=============================================
+//Напиши клас Client який створює об'єкт
+//з ​​властивостями login email
+//Оголоси приватні властивості #login #email,
+//доступ до яких зроби через геттер та сеттер login email
+
+// class Client {
+//     #login;
+//     #email;
+//     constructor(login, email) {
+//         this.#login = login;
+//         this.#email = email;
+//     }
+//     get getClientEmail() {
+//         return this.#email;
+//     }
+//     get getClientLogin() {
+//         return this.#login;
+//     }
+//     set setClientEmail(newEmail) {
+//         this.#email = newEmail;
+//     }
+//     set setClientLogin(newLogin) {
+//         this.#login = newLogin;
+//     }
+// }
+
+// const newClient = new Client("Poly", "poly@mail.com")
+// console.log(newClient)
+// console.log(newClient.setClientLogin = "Mango")
+// ===============================================
