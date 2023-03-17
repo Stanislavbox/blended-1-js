@@ -279,7 +279,7 @@
 //     ];
 // Вариант через map()
 //     const newArr = fruits.map(fruit => {
-      
+
 //      return  {...fruit, id: Date.now(), price: fruit.price * 0.8}
 //     });
 
@@ -290,7 +290,6 @@
 //     }
 
 //     console.log(newArr);
-
 
 // const arr = [
 //       { name: "Albert", surname: "Einstein", born: 1879, dead: 1955, id: 1 },
@@ -307,25 +306,22 @@
 //       { name: "Lise", surname: "Meitner", born: 1878, dead: 1968, id: 12 },
 //       { name: "Hanna", surname: "Hammarström", born: 1829, dead: 1909, id: 13 }
 //       ];
-      
-      // - Получить массив ученых, родившихся в 19 веке.
-      // - Найти общую сумму лет, сколько прожили все ученые.
-      // - Отсортировать ученых по алфавиту.
-      // - Отсортировать ученых по количеству прожитых лет.
-      // - Удалить из массива ученых, родившихся в 15, 16 или 17 веках.
-      // - Найти ученого, который родился позже всех.
-      // - Найти год рождения Albert Einstein.
-      // - Найти ученых, фамилия которых начинается на букву "С".
-      // - Удалить из массива всех ученых, имя которых начинается на букву "A".
-      // - Найти ученого, который прожил больше всех и ученого, который меньше.
-      // - Найти ученых, у которых совпадают первые буквы имени и фамилии.
-      // - Узнать, все ли ученые работали в 19 веке.
 
+// - Получить массив ученых, родившихся в 19 веке.
+// - Найти общую сумму лет, сколько прожили все ученые.
+// - Отсортировать ученых по алфавиту.
+// - Отсортировать ученых по количеству прожитых лет.
+// - Удалить из массива ученых, родившихся в 15, 16 или 17 веках.
+// - Найти ученого, который родился позже всех.
+// - Найти год рождения Albert Einstein.
+// - Найти ученых, фамилия которых начинается на букву "С".
+// - Удалить из массива всех ученых, имя которых начинается на букву "A".
+// - Найти ученого, который прожил больше всех и ученого, который меньше.
+// - Найти ученых, у которых совпадают первые буквы имени и фамилии.
+// - Узнать, все ли ученые работали в 19 веке.
 
-
-
-      //Task 1
-      //TODO:=============================================
+//Task 1
+//TODO:=============================================
 //Напиши функцію конструктор User для створення користувача з такими властивостями
 //a. userName - ім'я, рядок
 //b. age - вік, число
@@ -342,7 +338,7 @@
 //     this.getInfo = function (){
 //  return (`Користувачеві ${userName} ${age} років і в нього ${numbersOfPost} публікацій.`);
 //     }
-       
+
 // }
 
 // const newUser = new User({ userName: "Anna", age: 22, numbersOfPost: 5 });+
@@ -359,7 +355,6 @@
 //getItems() - повертайте масив товарів
 //addItems(item) - отримує новий товар та додає його до поточних
 //removeItem(item) - отримує товар і, якщо він є, видаляє його з поточних
-
 
 // const Storage = function(arr) {
 //     this.items = arr;
@@ -413,3 +408,52 @@
 // console.log(newClient)
 // console.log(newClient.setClientLogin = "Mango")
 // ===============================================
+
+//TODO:=============================================
+//Напиши клас Notes який управляє колекцією нотаток у
+//властивості items.
+//Нотатка - це об'єкт із властивостями text і priority.
+//Додай класу статичний метод Priority,
+//який буде повертати об'єкт із пріоритетами
+// {
+//   HIGHT: "hight",
+//   LOW: "low",
+// }
+//Додай методи addNote(note), removeNote(text)
+//updatePriority(text, newPriority)
+
+//task 4
+// class Notes {
+//   static Priority() {
+//     return {
+//       HIGHT: "hight",
+//       LOW: "low",
+//     };
+//   }
+//   constructor() {
+//     this.items = [];
+//   }
+//   addNote(note) {
+//     this.items.push(note);
+//   }
+
+//   removeNote(text) {
+//     this.items = this.items.filter((note) => note.text !== text);
+//   }
+
+//   updatePriority(text, newPriority) {
+//     let idx = this.items.findIndex((note) => note.text === text);
+//     this.items[idx].priority = newPriority;
+//   }
+// }
+
+// const newNotes = new Notes();
+// newNotes.addNote({ text: "note1", priority: Notes.Priority().HIGHT });
+// newNotes.addNote({ text: "note2", priority: Notes.Priority().HIGHT });
+// newNotes.addNote({ text: "note3", priority: Notes.Priority().HIGHT });
+// newNotes.addNote({ text: "note4", priority: Notes.Priority().HIGHT });
+// console.log(newNotes);
+// newNotes.removeNote("note2");
+// console.log(newNotes);
+// newNotes.updatePriority("note3", Notes.Priority().LOW);
+// console.log(newNotes);
